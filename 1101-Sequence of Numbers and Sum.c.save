@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+    long long a,b,x,y,i,j,sum=0;
+    for(;;){
+        scanf("%lld%lld", &a, &b);
+        if(a<=0 || b<=0){
+            break;
+        }
+
+        else{
+            if(a<b){
+                x = a;
+                y = b;
+            }
+            else if(b<a){
+                x = b;
+                y = a;
+            }
+
+            for(i=x; i<=y; i++){
+                sum+=i;
+                printf("%lld ", i);
+            }
+            printf("Sum=%lld\n", &sum);
+            sum = 0;
+
+        }
+    }
+    return 0;
+}

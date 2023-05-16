@@ -1,0 +1,46 @@
+#include<stdio.h>
+int main()
+{
+    double a,b,c,d,e,f,g,h,i,j,k,l,m,n;
+    int o,p,q,r,s,t,u,v,w,x,y,z,lastt;
+    scanf("%lf", &n);
+    o = n * 100;
+    p = o /10000;
+    a = o - (p * 10000);
+    q = a / 5000;
+    b = a - (q * 5000);
+    r = b / 2000;
+    c = b - (r * 2000);
+    s = c / 1000;
+    d = c - (s * 1000);
+    t = d / 500;
+    e = d - (t * 500);
+    u = e / 200;
+    f = e - (u * 200);
+    v = f / 100;
+    g = f - (v * 100);
+    w = g / 50;
+    h = g - (w * 50);
+    x = h / 25;
+    i = h - (x * 25);
+    y = i / 10;
+    j = i - (y * 10);
+    z = j / 5;
+    k = j - (z * 5);
+    lastt = k / 1;
+    printf("NOTAS:\n");
+    printf("%d nota(s) de R$ 100.00\n", p);
+    printf("%d nota(s) de R$ 50.00\n", q);
+    printf("%d nota(s) de R$ 20.00\n", r);
+    printf("%d nota(s) de R$ 10.00\n", s);
+    printf("%d nota(s) de R$ 5.00\n", t);
+    printf("%d nota(s) de R$ 2.00\n", u);
+    printf("MOEDAS:\n");
+    printf("%d moeda(s) de R$ 1.00\n", v);
+    printf("%d moeda(s) de R$ 0.50\n", w);
+    printf("%d moeda(s) de R$ 0.25\n", x);
+    printf("%d moeda(s) de R$ 0.10\n", y);
+    printf("%d moeda(s) de R$ 0.05\n", z);
+    printf("%d moeda(s) de R$ 0.01\n", lastt);
+    return 0;
+}

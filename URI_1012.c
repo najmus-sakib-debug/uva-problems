@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+    double A,B,C,a,b,c,d,e;
+    scanf("%lf%lf%lf", &A, &B, &C);
+    a = (.5 * A * C);
+    b = 3.14159 * C * C;
+    c = (.5 * (A + B)) * C;
+    d = B * B;
+    e = A * B;
+    printf("TRIANGULO: %.3lf\nCIRCULO: %.3lf\nTRAPEZIO: %.3lf\nQUADRADO: %.3lf\nRETANGULO: %.3lf\n", a, b, c, d, e);
+    return 0;
+}

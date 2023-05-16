@@ -1,0 +1,42 @@
+#include<stdio.h>
+int main()
+{
+    double s,x,y;
+    scanf("%lf", &s);
+    if(s>=0 && s<=400.00){
+        x = s + (s * (.15));
+        y = x - s;
+        printf("Novo salario: %.2lf\n", x);
+        printf("Reajuste ganho: %.2lf\n", y);
+        printf("Em percentual: 15 %\n");
+    }
+    
+    else if(s>400 && s<=800){
+        x = s + (s * (.12));
+        y = x - s;
+        printf("Novo salario: %.2lf\n", x);
+        printf("Reajuste ganho: %.2lf\n", y);
+        printf("Em percentual: 12 %\n");
+        
+    }
+    
+    else if(s>800 && s<=1200){
+        x = s + (s * (.1));
+        y = x - s;
+        printf("Novo salario: %.2lf\n", x);
+        printf("Reajuste ganho: %.2lf\n", y);
+        printf("Em percentual: 10 %\n");
+    }
+    
+    else if(s>1200 && s<=2000){
+        x = s + (s * (.07));
+        y = x - s;
+        printf("Novo salario: %.2lf\n", x);
+        printf("Reajuste ganho: %.2lf\n", y);
+        printf("Em percentual: 7 %\n");
+    }
+    
+    
+
+    return 0;
+}
